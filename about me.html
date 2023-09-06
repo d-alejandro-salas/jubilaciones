@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>About Me</title>
+  <!-- Enlace a Font Awesome (versión kit) -->
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <!-- Enlace a Bulma CSS -->
+<!--   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"> -->
+  <!-- Enlace a mi estilo propio CSS -->
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <link rel="stylesheet" type="text/css" href="aboutMe.css">
+  <!-- Enlace a Font Awesome (versión regular) -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Enlace a mi archivo JavaScript para el header y footer -->
+  <script src="headerFooter.js"></script>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <nav id="aboutMeMenu">
+    <h2>INDEX</h2>
+    <ul>
+      <li><a href="#personalStatement">Personal Statement</a></li>
+      <li><a href="#work">Work History</a></li>
+      <li><a href="#interests">My Life and Interests</a></li>
+      <li><a href="#pet">My Beloved Pet</a></li>
+    </ul>
+  </nav>
+  <main>
+    <button class="light-mode-button" id="switch">
+    <span class="icon moon" style="color:#FFF; font-family: Creepster; letter-spacing: 2px;">HALLOWEEN MODE</span>
+  </button>
+  <script>
+    // Agregar evento de clic al botón para cambiar entre los modos Halloween y Normal
+    const switchButton = document.getElementById("switch");
+    switchButton.addEventListener("click", function () {
+      document.body.classList.toggle('light'); // Alternar la clase 'light' en el body      
+      // Cambiar el contenido del botón
+      const modeText = switchButton.querySelector('.icon.moon'); // Cambiar a .icon.moon
+      if (modeText.textContent === 'HALLOWEEN MODE') { // Cambiar a 'HALLOWEEN MODE'
+        modeText.textContent = 'NORMAL MODE';
+      modeText.style.fontFamily = "Arial, sans-serif";
+        modeText.style.color = "black";
+      } else {
+        modeText.textContent = 'HALLOWEEN MODE';
+        modeText.style.fontFamily = "Creepster, sans-serif";
+        modeText.style.color = "white";
+      }
+    });
+  </script>
+  <section id="personalStatement">
+    <h2>Personal Statement</h2>
+    <p>
+        I am a graduate of the esteemed <em>Universidad de Buenos Aires</em>, the most prestigious university in Argentina, with a degree in formal linguistics and generative grammar. My academic journey also included a study of computational linguistics, which kindled my enthusiasm for programming and impelled me to pursue further studies in web development. I have also successfully completed a comprehensive course on Outlook and Web Development through LinkedIn. My proficiency extends to email management, social media engagement, and the comprehensive utilization of Microsoft Office suite.
+    </p>
+    <p>
+        Presently, I am dedicated to advancing my expertise in HTML, CSS, and JavaScript, with a steadfast aim of becoming a proficient full-stack developer. Beyond my academic pursuits, I have assumed the role of a private tutor, imparting knowledge to students in subjects including mathematics, syntax, philosophy, and history at the secondary education level. Additionally, I have conducted virtual Spanish lessons catering to students residing in the United States.
+    </p>
+    <p>
+        My overarching aspiration is to continue my journey of learning and evolution within the domains of linguistics and programming. I am invigorated by the myriad opportunities that lie ahead, propelling me to embrace them with anticipation and fervor.
+    </p>
+  </section>
+  <section id="work">
+    <h2>Work History</h2>
+    <strong>Private Tutor</strong>
+    <br>
+    <em>April 2020 - Present</em>
+    <p>
+        <ul>
+            <li>
+                Delivering private tutorials encompassing Spanish syntax, mathematics, philosophy, world history, and English to diverse students, both through virtual platforms and in-person sessions.
+            </li>
+            <li>
+                Developing supplementary educational materials to fortify comprehension of subjects.
+            </li>
+            <li>
+                Monitoring students' progress and nurturing the cultivation of their aptitudes.
+            </li>
+            <li>
+                Offering tailored guidance and dedicated support to students contending with learning challenges.
+            </li>
+            <li>
+                Curating extracurricular and supplementary activities to enhance students' educational experience.
+            </li>
+            <li>
+                Fostering self-directed learning and fostering holistic student development.
+            </li>
+        </ul>
+    </p>
+  </section>
+  <section id="interests">
+    <h2>My Life and Interests</h2>
+    <p>
+        A steadfast commitment to a health-conscious lifestyle defines my choices, frequently manifesting through participation in sports and gym routines whenever professional commitments permit. Naturally, I am unequivocally averse to the use of tobacco. Furthermore, my affinity for chess is profound, substantiated by my Elo rating hovering around 1500, occasionally subject to fluctuations.
+    </p>
+    <p>
+        My fervor for economics fuels my passion, and I derive profound inspiration from the doctrines advocated by Adam Smith, Milton Friedman, and Friedrich Von Hayek.
+    </p>
+    <p>
+        Embarking on three solitary sojourns, each spanning 15 days, I embarked on ventures to diverse locales. In 2017, I explored the captivating expanse of New York City, an encounter that captivated my heart. In 2019, I journeyed to the enchanting realms of Los Angeles, San Francisco, and the mesmerizing Las Vegas. The year 2023 ushered in another sojourn, gracing the radiant cities of Miami, the enchanting Orlando, and the vibrant Tampa.
+    </p>
+    <p>
+        While harboring a desire to revisit New York City, Las Vegas, and Orlando (excluding others), my ardor is eclipsed by an unquenchable thirst for fresh explorations encompassing destinations such as Chicago, Philadelphia, Washington, New England, London, Italy, Tokyo, and an array of captivating locales. The vivid memories of my sojourn to Rio de Janeiro with friends remain etched in my heart, a testament to its unparalleled splendor.
+    </p>
+    <p>
+        As an ardent aficionado of English Literature, I harbor affection for several cherished books:
+    </p>
+    <ul>
+        <li>
+            <em>Dracula</em> by Bram Stoker: This compelling narrative enthralled me during my adolescence, captivating my attention to the point of ceaseless engagement. Its extraordinary storyline rendered me incapable of putting it aside, resulting in its completion within a mere 10 days.
+        </li>
+        <li>
+            <em>Life</em> by Keith Richards: An unexpected parallel with <em>Dracula</em> unfolds within the pages of this autobiography. Despite initial reservations surrounding a guitarist's memoir, the text proved captivating. Keith Richards regales readers with tales that transcend expectations, infusing the narrative with delightful eccentricity and amusement. The arresting account commences with Keith Richards' improbable police chase, an unforeseen overture that instantly ensnares the reader's attention.
+        </li>
+        <li>
+            <em>Robinson Crusoe</em> by Daniel Defoe: This remarkable opus delves into multifaceted philosophical themes. I delved even deeper into its relatively obscure sequel. The text imparts invaluable life lessons, often delving into economic principles, paralleling the essence of <em>Gulliver's Travels</em>, another literary masterpiece.
+        </li>
+        <li>
+            <em>The Fatal Conceit: The Errors of Socialism</em> by Friedrich Von Hayek: This outstanding work, hailing from the erudite pen of Friedrich Von Hayek, constitutes an imperative read in the realm of economics. Within its pages, Von Hayek expertly critiques the hubris of politicians who assert their superiority in governing our lives. However, truth echoes in the realization that we alone are the true architects of our destinies.
+        </li>
+    </ul>
+    <p>
+        These profound literary contributions, among others, have indelibly influenced my comprehension of both literature and economics. A relentless thirst for knowledge propels my quest for captivating literary works, an enthusiasm that crescendos with the forthcoming initiation of <em>The Man Versus the State</em>.
+    </p>
+    <p>
+        Further enriching my life is a deep-seated passion for the vibrant cultural tapestry of the 1980s, resonating profoundly through its music and cinema. Reverberating melodies from iconic bands like The Rolling Stones, AC/DC, Queen, and ZZ Top hold a cherished place within my heart. The pinnacle of my fortune involved bearing witness to a live performance by The Rolling Stones—an encounter etched indelibly into my memory.
+    </p>
+    <p>
+        In the realm of cinematic expression, my heart sways toward action-packed epics. Beloved titles such as <em>Scarface</em>, <em>The Godfather</em>, and <em>Carlito's Way</em> effortlessly claim their positions in my cinematic hall of fame. Unsurprisingly, Al Pacino, an actor of unparalleled prowess, reigns as my ultimate favorite, inspiring me to delve into nearly every cinematic gem graced by his presence. The comprehensive saga of James Bond, particularly with Roger Moore's portrayal, stands as an endearing treasure. While books serve as portals to philosophical introspection, cinema assumes the role of an entertainment haven, making action movies my preferred indulgence.
+    </p>
+    <p>
+        In the realm of television, my tastes gravitate toward <em>Lucifer</em>, a captivating TV series that consistently captivates my attention—especially during my airborne journeys. Additionally, the charm of <em>The New Adventures of Old Christine</em> has secured its position as another cherished television series in my heart.
+    </p>
+  </section>
+  <section id="pet">
+    <h2>My Cherished Feline Companion</h2>
+    <p>
+        Among my cherished companions is a graceful female cat named "Mumi," who became an integral part of my family in July 2021. Her inaugural meow graced the world on the  first of May in the same year. Mumi emanates an aura of serenity and tranquility, infusing our lives with a profound sense of contentment.
+    </p>
+    <p>
+        In my responsive <a href="gallery.html">gallery</a>, I invite you to share in the precious moments of Mumi's life, artfully captured in a myriad of heartwarming poses. One of her most endearing attributes is her propensity to emit a soft purr of delight whenever she is lovingly caressed.
+    </p>
+  </section>
+    <figure class="photo-container">
+        <span class="photo-border">
+          <img
+            border="0"
+            data-original-height="660"
+            data-original-width="435"
+            height="320"
+            src="Imágenes/miFoto.jpg"
+            width="211"
+            alt="Mi foto"
+          />
+        </span>
+      <figcaption class="photo-caption">
+        <b>Licensed in Generative Grammar Daniel Alejandro</b><img
+          alt="🇦🇷"
+          class="flag-icon"
+          height="16"
+          referrerpolicy="origin-when-cross-origin"
+          src="https://static.xx.fbcdn.net/images/emoji.php/v9/t48/1/16/1f1e6_1f1f7.png"
+          width="16"/>
+      </figcaption>
+    </figure>
+    <p>
+      Date of Birth: 1 April 1988.
+    </p>
+  </main>
+</body>
+</html>
