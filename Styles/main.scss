@@ -1,0 +1,53 @@
+main {
+  color: white;
+}
+
+#main__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-content: center;
+
+  div {
+    background-color: white;
+    color: #63B480;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 338px;
+      height: auto;
+    }
+
+    p {
+      font-size: 2rem;
+      margin-top: 10px;
+    }
+  }
+}
+
+/* Diseño para tabletas */
+@media screen and (min-width: 600px) {
+  #main__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Diseño para escritorio */
+@media screen and (min-width: 1024px) {
+  #main__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

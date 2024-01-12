@@ -1,0 +1,103 @@
+/* Diseño mobile-first */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer__container {
+    display: flex; /* Cambiado a flex para tener filas en lugar de columnas */
+    flex-direction: column; /* Filas en lugar de columnas en el diseño mobile-first */
+    gap: 2rem;
+
+    section {
+      flex: 1; /* Todas las secciones ocupan el mismo espacio disponible */
+      margin-bottom: 1rem;
+    }
+
+    .redesSociales__ul {
+      display: flex;
+      justify-content: center; /* Alinea los elementos en el centro horizontalmente */
+      transform: scale(1.5);
+
+      li {
+        margin-left: 2rem; /* Ajusta el valor según la separación deseada */
+      }
+    }
+
+    #yearPlaceholder {
+      font-weight: bold;
+    }
+  }
+
+  #enlaces {
+    text-align: center; /* Centra el contenido horizontalmente en la sección "enlaces" */
+
+    a {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .destacado {
+    border: 2px solid #319857;
+    border-radius: 8px;
+    padding: 10px;
+    animation: resaltar 1s 2 alternate;
+  }
+
+  @keyframes resaltar {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .copyright__a {
+    color: #4B815E;
+  }
+}
+
+
+/* Diseño para tabletas */
+@media screen and (min-width: 600px) {
+  footer {
+    padding: 2rem;
+    justify-content: space-between;
+    text-align: left;
+
+    .footer__container {
+      flex-direction: row;
+      justify-content: space-between;
+
+      section {
+        flex: 1; /* Todas las secciones ocupan el mismo espacio disponible */
+      }
+    }
+  }
+}
+
+/* Diseño para escritorio */
+@media screen and (min-width: 1024px) {
+  footer {
+    padding: 3rem;
+
+    .footer__container {
+      flex-direction: row; /* Cambiado a columnas en el diseño de escritorio */
+
+      section {
+        flex: 1; /* Todas las secciones ocupan el mismo espacio disponible */
+      }
+    }
+  }
+}

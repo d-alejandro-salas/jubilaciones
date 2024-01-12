@@ -1,0 +1,39 @@
+@import './header-footer.scss';
+@import './main.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+  
+body {
+  font-family: Arial, sans-serif;
+  text-align: justify;
+  font-size: 2rem;
+}
+
+ul, ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+main {
+  padding: 5rem 10rem;
+  background-color: #4B815E;
+  line-height: 3rem;
+}
+
+p {text-align:justify;}
+
+h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}

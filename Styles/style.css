@@ -1,0 +1,230 @@
+@charset "UTF-8";
+/* Diseño mobile-first */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .footer__container {
+  display: flex; /* Cambiado a flex para tener filas en lugar de columnas */
+  flex-direction: column; /* Filas en lugar de columnas en el diseño mobile-first */
+  gap: 2rem;
+}
+footer .footer__container section {
+  flex: 1; /* Todas las secciones ocupan el mismo espacio disponible */
+  margin-bottom: 1rem;
+}
+footer .footer__container .redesSociales__ul {
+  display: flex;
+  justify-content: center; /* Alinea los elementos en el centro horizontalmente */
+  transform: scale(1.5);
+}
+footer .footer__container .redesSociales__ul li {
+  margin-left: 2rem; /* Ajusta el valor según la separación deseada */
+}
+footer .footer__container #yearPlaceholder {
+  font-weight: bold;
+}
+footer #enlaces {
+  text-align: center; /* Centra el contenido horizontalmente en la sección "enlaces" */
+}
+footer #enlaces a {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+footer .destacado {
+  border: 2px solid #319857;
+  border-radius: 8px;
+  padding: 10px;
+  animation: resaltar 1s 2 alternate;
+}
+@keyframes resaltar {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+}
+footer .copyright__a {
+  color: #4B815E;
+}
+
+/* Diseño para tabletas */
+@media screen and (min-width: 600px) {
+  footer {
+    padding: 2rem;
+    justify-content: space-between;
+    text-align: left;
+  }
+  footer .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer .footer__container section {
+    flex: 1; /* Todas las secciones ocupan el mismo espacio disponible */
+  }
+}
+/* Diseño para escritorio */
+@media screen and (min-width: 1024px) {
+  footer {
+    padding: 3rem;
+  }
+  footer .footer__container {
+    flex-direction: row; /* Cambiado a columnas en el diseño de escritorio */
+  }
+  footer .footer__container section {
+    flex: 1; /* Todas las secciones ocupan el mismo espacio disponible */
+  }
+}
+/* Diseño mobile-first */
+header {
+  background-color: #333;
+  padding: 1rem;
+  text-align: center;
+}
+header #logo img {
+  width: 32px;
+  height: 32px;
+}
+header nav {
+  margin-top: 1rem;
+}
+header nav a {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Diseño para tabletas */
+@media screen and (min-width: 600px) {
+  header {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  header #logo img {
+    width: 48px;
+    height: 48px;
+  }
+  header nav {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+  header nav a {
+    font-size: 1.8rem;
+  }
+  /* Diseño para escritorio */
+}
+@media screen and (min-width: 600px) and (min-width: 1024px) {
+  header {
+    padding: 3rem;
+  }
+  header #logo img {
+    width: 64px;
+    height: 64px;
+  }
+  header nav {
+    margin-top: 3rem;
+  }
+  header nav a {
+    font-size: 2rem;
+  }
+}
+main {
+  color: white;
+}
+
+#main__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-content: center;
+}
+#main__grid div {
+  background-color: white;
+  color: #63B480;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+#main__grid div:hover {
+  transform: scale(1.05);
+}
+#main__grid div h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+#main__grid div img {
+  width: 338px;
+  height: auto;
+}
+#main__grid div p {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+/* Diseño para tabletas */
+@media screen and (min-width: 600px) {
+  #main__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Diseño para escritorio */
+@media screen and (min-width: 1024px) {
+  #main__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: justify;
+  font-size: 2rem;
+}
+
+ul, ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+main {
+  padding: 5rem 10rem;
+  background-color: #4B815E;
+  line-height: 3rem;
+}
+
+p {
+  text-align: justify;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=style.css.map */

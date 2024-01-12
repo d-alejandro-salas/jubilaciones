@@ -3,75 +3,31 @@
 <head>
   <meta charset="utf-8">
   <title>My first website</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Enlace a Font Awesome (versión kit) -->
   <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-  <!-- Enlace a Bulma CSS -->
-<!--   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"> -->
-  <!-- Enlace a mi estilo propio CSS -->
-  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <link rel="stylesheet" type="text/css" href="Styles/style.css">
   <!-- Enlace a Font Awesome (versión regular) -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Enlace a mi archivo JavaScript para el header y footer -->
-  <script src="headerFooter.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+  <script src="./js/headerFooter.js"></script>
 </head>
 <body>
   <main id="indexMain">
-      <article>
-        <p>Official presentation of my first page created entirely by me. Crafted entirely with HTML and CSS, without any assistance from pre-made templates.</p>
-        <img src="Imágenes/Trump.jpg" alt="Former president Donald Trump" title="Former President Donald Trump">
-      </article>
-      <aside class="aside" id="flex-container">
-        <h2>CONTACT ME</h2>
-        <form class="form" onsubmit="return validateForm()">
-          <div class="form__section">
-            <input type="email" class="form__input" id="email" placeholder="Enter your email.">
-          </div>
-          <div class="form__section">
-            <input type="text" class="form__input" id="subject" placeholder="Enter the subject of the email.">
-          </div>
-          <div class="form__section">
-            <textarea class="form__input" id="message" placeholder="Enter your message for D Alejandro."></textarea>
-          </div>
-          <div class="form__section">
-            <button type="submit" class="form__button"><strong>SEND</strong></button>
-          </div>
-          <p id="messageForm"></p>
-        </form>
-         <!-- Agrega un párrafo para el mensaje de éxito -->
-        <script>
-          function validateForm() {
-            // Obtener los valores de los campos
-            var email = document.getElementById("email").value;
-            var subject = document.getElementById("subject").value;
-            var message = document.getElementById("message").value;
-            const messageForm = document.getElementById("messageForm");
-
-            // Verificar si todos los campos están llenos
-            if (email !== "" && subject !== "" && message !== "") {
-              // Mostrar el mensaje de éxito
-              messageForm.innerHTML = `Message sent successfully!`;
-              messageForm.style.color = "green";
-
-              // Guardar los valores en una variable
-              var formData = {
-                email: email,
-                subject: subject,
-                message: message
-              };
-
-              // Mostrar los valores en la consola
-              console.log("Form Data:", formData);
-
-              return false; // Evitar que el formulario se envíe
-            } else {
-              // Mostrar mensaje de error
-              messageForm.innerHTML = "Please, fill in all fields.";
-              messageForm.style.color = "red";
-              return false; // Evitar que el formulario se envíe
-            }
-          }
-        </script>
-      </aside>
+    <section id="introduction">
+      <h1>
+        Estudio Jurídico especializado en Derecho Previsional y Sucesiones
+      </h1>
+      <p>En Jubilamos, nuestra prioridad es brindar apoyo integral a nuestros clientes en todas las etapas de sus trámites ante ANSES y en la protección de sus derechos. Nos especializamos en ofrecer asesoramiento y la mejor orientación, asegurando la máxima seguridad jurídica y bienestar para quienes confían en nuestros servicios.</p>
+      <p>Nuestro compromiso es garantizar la más alta calidad en la asistencia que proporcionamos. Con calidez, celeridad y una amplia experiencia en el campo, trabajamos incansablemente para asegurar que cada cliente reciba el apoyo necesario de manera oportuna y eficiente. Creemos firmemente en la importancia de proteger los derechos y velar el bienestar en cada paso del proceso.</p>
+    </section><br>
+    <section id="main__grid">
+      <div><h3>JUBILACIONES</h3><img src="./Images/jubilaciones.webp"/><p>Tramitamos la mejor jubilación posible para nuestros clientes, brindándoles un servicio integral, analizando requisitos de edad y aportes realizados; también brindamos la posibilidad de que accedan a la jubilación utilizando las moratorias vigentes en caso de no contar con los aportes requeridos por ley.</p></div> 
+      <div><h3>PENSIÓN POR FALLECIMIENTO</h3><img src="./Images/pension.webp" /><p>Ante el fallecimiento de un trabajador en actividad o de un jubilado, este beneficio les corresponde a los cónyuges o convivientes de la persona fallecida, a los hijos menores y los hijos mayores discapacitados.</p></div>
+      <div><h3>REAJUSTE DE HABERES EJECUCIÓN DE SENTENCIAS</h3><img src="./Images/reajustes.webp" /><p>Revisamos el cálculo de tu jubilación para verificar si estás cobrando lo correcto e iniciamos un reclamo judicial para lograr el reajuste de tus haberes. Si te jubilaste por ANSES 𝐚𝐧𝐭𝐞𝐬 de marzo año 2018 o la pensión de tu esposo es de esa fecha, No aceptaste la Reparación Histórica y gran parte de los aportes que realizaste fueron en Relación de dependencia.</p></div>
+      <div><h3>RETIROS POR INVALIDEZ</h3><img src="./Images/invalidez.webp" /><p>Hombres y mujeres, que no alcanzaron la edad para acceder a la jubilación ordinaria, que tengan una incapacidad laboral del 66% determinada por junta médica y que cumplan con la condición de «aportante regular» o «aportante irregular con derecho», podrán acceder a este beneficio.</p></div>
+      <div><h3>RENTA VITALICIA</h3><img src="./Images/rentaVitalicia.webp" /><p>Si tenes una Pensión / Renta Vitalicia de una Compañía de Seguro de Retiro –ex AFJP- y cobras menos que la jubilación mínima, iniciamos el reclamo para lograr los aumentos y reajustar tu haber mensual con los fallos de la Corte Suprema de Justicia de la Nación.</p></div>
+      <div><h3>MORATORIAS</h3><img src="./Images/moratorias.webp" /><p>Toda persona que no cuente con los años de aportes necesarios, sean trabajadores autónomos o empleados en relación de dependencia, podrán acceder a una jubilación o pensión por fallecimiento de un trabajador mediante la adhesión a una moratoria.</p></div> 
+    </section>
   </main>
 </body>
 </html>
