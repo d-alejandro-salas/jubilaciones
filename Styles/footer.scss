@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 /* Diseño mobile-first */
 
 footer {
@@ -10,6 +12,10 @@ footer {
   a {
     color: #fff;
     text-decoration: none;
+  }
+
+  a:hover {
+    color: $verde-principal;
   }
   
   .footer__container {
@@ -46,8 +52,18 @@ footer {
     }
   }
 
+  #mapa {
+    text-align: center; // Centra el contenido horizontalmente
+
+    iframe {
+      margin: 0 auto; // Establece el margen izquierdo a 0
+      display: block; // Para ajustar automáticamente el margen horizontal
+      max-width: 100%; // Establece el ancho máximo al 100% del contenedor
+    }
+  }
+
   .destacado {
-    border: 2px solid #319857;
+    border: 2px solid $verde-principal;
     border-radius: 8px;
     padding: 10px;
     animation: resaltar 1s 2 alternate;

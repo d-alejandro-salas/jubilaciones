@@ -11,6 +11,9 @@ footer a {
   color: #fff;
   text-decoration: none;
 }
+footer a:hover {
+  color: #4B815E;
+}
 footer .footer__container {
   display: flex; /* Cambiado a flex para tener filas en lugar de columnas */
   flex-direction: column; /* Filas en lugar de columnas en el diseño mobile-first */
@@ -38,8 +41,16 @@ footer #enlaces a {
   display: block;
   margin-bottom: 0.5rem;
 }
+footer #mapa {
+  text-align: center;
+}
+footer #mapa iframe {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+}
 footer .destacado {
-  border: 2px solid #319857;
+  border: 2px solid #4B815E;
   border-radius: 8px;
   padding: 10px;
   animation: resaltar 1s 2 alternate;
