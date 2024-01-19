@@ -94,8 +94,8 @@ header {
   /* Mostrar el icono del menú en dispositivos móviles */
 }
 header #logo img {
-  width: 32px;
-  height: 32px;
+  width: 200px;
+  height: 200px;
 }
 header nav {
   margin-top: 1rem;
@@ -132,8 +132,8 @@ header input[type=checkbox]:checked + nav {
     padding: 2rem;
   }
   header #logo img {
-    width: 48px;
-    height: 48px;
+    width: 64px;
+    height: 64px;
   }
   header nav {
     margin-top: 2rem;
@@ -151,8 +151,8 @@ header input[type=checkbox]:checked + nav {
     padding: 3rem;
   }
   header #logo img {
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
   }
   header nav {
     margin-top: 3rem;
