@@ -84,11 +84,14 @@ footer .copyright__a {
     flex: 1; /* Todas las secciones ocupan el mismo espacio disponible */
   }
 }
-/* Diseño mobile-first */
+/* Estilos comunes para todas las pantallas */
 header {
   background-color: #333;
   padding: 1rem;
   text-align: center;
+  /* Estilos específicos para el menú desplegable */
+  /* El menú aparecerá cuando la casilla de verificación esté marcada */
+  /* Mostrar el icono del menú en dispositivos móviles */
 }
 header #logo img {
   width: 32px;
@@ -103,13 +106,30 @@ header nav a {
   color: #fff;
   text-decoration: none;
 }
+header input[type=checkbox] {
+  display: none;
+}
+header #menu-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+header input[type=checkbox]:checked + nav {
+  display: block;
+}
+@media screen and (max-width: 599px) {
+  header #menu-icon {
+    display: block;
+  }
+  header nav {
+    display: none;
+  }
+}
 
 /* Diseño para tabletas */
 @media screen and (min-width: 600px) {
   header {
     padding: 2rem;
-    display: flex;
-    justify-content: space-between;
   }
   header #logo img {
     width: 48px;
@@ -124,9 +144,9 @@ header nav a {
   header nav a {
     font-size: 1.8rem;
   }
-  /* Diseño para escritorio */
 }
-@media screen and (min-width: 600px) and (min-width: 1024px) {
+/* Diseño para escritorio */
+@media screen and (min-width: 1024px) {
   header {
     padding: 3rem;
   }
