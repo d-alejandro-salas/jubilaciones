@@ -1,6 +1,6 @@
 @import './footer.scss';
 
-/* Estilos comunes para todas las pantallas */
+/* Diseño mobile-first */
 header {
   background-color: #333;
   padding: 1rem;
@@ -8,8 +8,8 @@ header {
 
   #logo {
     img {
-      width: 200px;
-      height: 200px;
+      width: 100px;
+      height: 100px;
     }
   }
 
@@ -18,36 +18,9 @@ header {
 
     a {
       display: block;
-      margin-bottom: 0.5rem;
+      margin-bottom: 2rem;
       color: #fff;
       text-decoration: none;
-    }
-  }
-
-  /* Estilos específicos para el menú desplegable */
-  input[type="checkbox"] {
-    display: none;
-  }
-
-  #menu-icon {
-    font-size: 2rem;
-    cursor: pointer;
-    display: none;
-  }
-
-  /* El menú aparecerá cuando la casilla de verificación esté marcada */
-  input[type="checkbox"]:checked + nav {
-    display: block;
-  }
-
-  /* Mostrar el icono del menú en dispositivos móviles */
-  @media screen and (max-width: 599px) {
-    #menu-icon {
-      display: block;
-    }
-
-    nav {
-      display: none;
     }
   }
 }
@@ -56,11 +29,13 @@ header {
 @media screen and (min-width: 600px) {
   header {
     padding: 2rem;
+    display: flex;
+    justify-content: space-between;
 
     #logo {
       img {
-        width: 64px;
-        height: 64px;
+        width: 80px;
+        height: 80px;
       }
     }
 
@@ -75,19 +50,11 @@ header {
       }
     }
   }
-}
 
 /* Diseño para escritorio */
 @media screen and (min-width: 1024px) {
   header {
     padding: 3rem;
-
-    #logo {
-      img {
-        width: 80px;
-        height: 80px;
-      }
-    }
 
     nav {
       margin-top: 3rem;
@@ -96,6 +63,4 @@ header {
         font-size: 2rem;
       }
     }
-  }
-}
-
+  }}}

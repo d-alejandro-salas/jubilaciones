@@ -84,56 +84,36 @@ footer .copyright__a {
     flex: 1; /* Todas las secciones ocupan el mismo espacio disponible */
   }
 }
-/* Estilos comunes para todas las pantallas */
+/* Diseño mobile-first */
 header {
   background-color: #333;
   padding: 1rem;
   text-align: center;
-  /* Estilos específicos para el menú desplegable */
-  /* El menú aparecerá cuando la casilla de verificación esté marcada */
-  /* Mostrar el icono del menú en dispositivos móviles */
 }
 header #logo img {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 }
 header nav {
   margin-top: 1rem;
 }
 header nav a {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
   color: #fff;
   text-decoration: none;
-}
-header input[type=checkbox] {
-  display: none;
-}
-header #menu-icon {
-  font-size: 2rem;
-  cursor: pointer;
-  display: none;
-}
-header input[type=checkbox]:checked + nav {
-  display: block;
-}
-@media screen and (max-width: 599px) {
-  header #menu-icon {
-    display: block;
-  }
-  header nav {
-    display: none;
-  }
 }
 
 /* Diseño para tabletas */
 @media screen and (min-width: 600px) {
   header {
     padding: 2rem;
+    display: flex;
+    justify-content: space-between;
   }
   header #logo img {
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
   }
   header nav {
     margin-top: 2rem;
@@ -144,15 +124,11 @@ header input[type=checkbox]:checked + nav {
   header nav a {
     font-size: 1.8rem;
   }
+  /* Diseño para escritorio */
 }
-/* Diseño para escritorio */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 600px) and (min-width: 1024px) {
   header {
     padding: 3rem;
-  }
-  header #logo img {
-    width: 80px;
-    height: 80px;
   }
   header nav {
     margin-top: 3rem;
@@ -161,10 +137,6 @@ header input[type=checkbox]:checked + nav {
     font-size: 2rem;
   }
 }
-main {
-  color: white;
-}
-
 #main__grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -185,7 +157,8 @@ main {
 }
 #main__grid div h3 {
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 #main__grid div img {
   width: 338px;
@@ -193,7 +166,7 @@ main {
 }
 #main__grid div p {
   font-size: 2rem;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 /* Diseño para tabletas */
@@ -233,17 +206,33 @@ ul, ol {
 }
 
 main {
-  padding: 2rem;
+  padding: 6rem;
   background-color: #4B815E;
+  color: white;
   line-height: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
 }
-
-p {
+main .pages__img {
+  width: 300px; /* Ajusta el tamaño según tus necesidades */
+  height: 200px;
+  margin-bottom: 2rem;
+  /* Agrega cualquier otro estilo necesario para las imágenes */
+}
+main a {
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+  color: inherit; /* Utiliza el color del texto del elemento padre */
+}
+main a:hover {
+  text-decoration: none; /* También elimina el subrayado en el estado de hover (si lo deseas) */
+}
+main p {
   text-align: justify;
 }
-
-h1 {
-  margin-bottom: 2rem;
+main h1 {
+  margin-bottom: 4rem;
   text-align: center;
   text-transform: uppercase;
 }

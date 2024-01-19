@@ -12,7 +12,7 @@
 html {
   font-size: 62.5%;
 }
-  
+
 body {
   font-family: Arial, sans-serif;
   text-align: justify;
@@ -21,20 +21,43 @@ body {
 }
 
 ul, ol {
-    list-style-type: none;
-    padding-left: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 main {
-  padding: 2rem;
+  padding: 6rem;
   background-color: #4B815E;
+  color: white;
   line-height: 3rem;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
 
-p {text-align:justify;}
+  .pages__img {
+    width: 300px; /* Ajusta el tamaño según tus necesidades */
+    height: 200px;
+    margin-bottom: 2rem;
+    /* Agrega cualquier otro estilo necesario para las imágenes */
+  }
 
-h1 {
-  margin-bottom: 2rem;
-  text-align: center;
-  text-transform: uppercase;
+  a {
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    color: inherit; /* Utiliza el color del texto del elemento padre */
+  }
+
+  a:hover {
+    text-decoration: none; /* También elimina el subrayado en el estado de hover (si lo deseas) */
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  h1 {
+    margin-bottom: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }

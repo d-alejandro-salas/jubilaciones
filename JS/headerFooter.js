@@ -24,16 +24,14 @@ document.addEventListener("DOMContentLoaded", function () {
   function generateHeader() {
     const header = document.createElement('header');
     header.innerHTML = `    
-    <a id="logo" href="index.html"><img src="./Images/logo.jpg" alt=""></a>
-    <input type="checkbox" id="menu-toggle">
-    <nav>
-      <a href="jubilate.html">JUBILATE</a>
-      <a href="haberMensual.html">HABER MENSUAL</a>
-      <a href="#redesSociales" onclick="highlightSection()">CONTACTATE</a>
-      <a href="#enlaces" onclick="highlightSection()">SITIOS DE INTERÉS</a>
-      <a href="nosotros.html">NOSOTROS</a>
-    </nav>
-    <label for="menu-toggle" id="menu-icon">&#9776;</label>`;
+      <a id="logo" href="index.html"><img src="./Images/logo.jpg" alt=""></a>
+      <nav>
+        <a href="jubilate.html">JUBILATE</a>
+        <a href="haberMensual.html">HABER MENSUAL</a>
+        <a href="#redesSociales" onclick="highlightSection()">CONTACTATE</a>
+        <a href="#enlaces" onclick="highlightSection()">SITIOS DE INTERÉS</a>
+        <a href="nosotros.html">NOSOTROS</a>
+      </nav>`;
     document.body.prepend(header);
   }
 
