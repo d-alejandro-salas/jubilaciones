@@ -154,7 +154,6 @@ header nav a:hover {
 }
 #main__grid {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 20px;
   justify-content: center;
 }
@@ -176,7 +175,7 @@ header nav a:hover {
   text-transform: uppercase;
 }
 #main__grid div img {
-  width: 338px;
+  width: 100%; /* Utiliza el ancho completo del contenedor */
   height: auto;
 }
 #main__grid div p {
@@ -187,7 +186,7 @@ header nav a:hover {
 /* Diseño para tabletas */
 @media screen and (min-width: 600px) {
   #main__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 /* Diseño para escritorio */

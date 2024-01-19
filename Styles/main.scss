@@ -2,7 +2,6 @@
 
 #main__grid {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 20px;
   justify-content: center;
 
@@ -26,7 +25,7 @@
     }
 
     img {
-      width: 338px;
+      width: 100%; /* Utiliza el ancho completo del contenedor */
       height: auto;
     }
 
@@ -40,7 +39,7 @@
 /* Diseño para tabletas */
 @media screen and (min-width: 600px) {
   #main__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 
@@ -50,3 +49,4 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
