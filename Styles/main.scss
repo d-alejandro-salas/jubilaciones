@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 #main__grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -6,7 +8,7 @@
 
   div {
     background-color: white;
-    color: #63B480;
+    color: $verde-principal;
     text-align: center;
     padding: 20px;
     border: 1px solid #ccc;

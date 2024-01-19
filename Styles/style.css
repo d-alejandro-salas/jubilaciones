@@ -5,6 +5,7 @@ footer {
   color: #fff;
   padding: 1rem;
   text-align: center;
+  padding: 6rem;
 }
 footer a {
   color: #fff;
@@ -103,6 +104,9 @@ header nav a {
   color: #fff;
   text-decoration: none;
 }
+header nav a:hover {
+  color: #4B815E;
+}
 
 /* Diseño para tabletas */
 @media screen and (min-width: 600px) {
@@ -145,7 +149,7 @@ header nav a {
 }
 #main__grid div {
   background-color: white;
-  color: #63B480;
+  color: #4B815E;
   text-align: center;
   padding: 20px;
   border: 1px solid #ccc;

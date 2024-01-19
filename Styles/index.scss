@@ -1,5 +1,6 @@
 @import './header-footer.scss';
 @import './main.scss';
+@import './variables.scss';
 
 *,
 *::before,
@@ -27,7 +28,7 @@ ul, ol {
 
 main {
   padding: 6rem;
-  background-color: #4B815E;
+  background-color: $verde-principal;
   color: white;
   line-height: 3rem;
   display: flex;
