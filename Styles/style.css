@@ -124,7 +124,7 @@ header nav a:hover {
   header {
     padding: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   header #logo img {
     width: 80px;
@@ -175,7 +175,7 @@ header nav a:hover {
   text-transform: uppercase;
 }
 #main__grid div img {
-  width: 100%; /* Utiliza el ancho completo del contenedor */
+  width: 100%;
   height: auto;
 }
 #main__grid div p {

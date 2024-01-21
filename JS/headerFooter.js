@@ -26,11 +26,11 @@ document.addEventListener("DOMContentLoaded", function () {
     header.innerHTML = `    
       <a id="logo" href="index.html"><img src="./Images/logo.jpg" alt=""></a>
       <nav>
-        <a href="jubilate.html">JUBILATE</a>
-        <a href="haberMensual.html">HABER MENSUAL</a>
+        <a href="jubilaciones.html">JUBILATE</a>
+        <a href="reajusteHaberes.html">HABER MENSUAL</a>
         <a href="#redesSociales" onclick="highlightSection()">CONTACTATE</a>
-        <a href="#enlaces" onclick="highlightSection()">SITIOS DE INTERÉS</a>
         <a href="nosotros.html">NOSOTROS</a>
+        <a href="#enlaces" onclick="highlightSection()">SITIOS DE INTERÉS</a>
       </nav>`;
     document.body.prepend(header);
   }
@@ -65,8 +65,12 @@ document.addEventListener("DOMContentLoaded", function () {
           <br>
           </section>
       </div>
-      <br><p style="text-align: center;">Web Developer <a class="copyright__a" href="https://drive.google.com/file/d/1JvKXVXbLuJM6whTgIW7sI9gLW1nE9W_H/view?usp=drive_link">Daniel Alejandro</a>, contrataciones: <a href="mailto:daniel.salas@bue.edu.ar">daniel.salas@bue.edu.ar</a>. © All rights reserved <span id="yearPlaceholder"></span>.</p>
-      `;
+      <br><br><br><br><hr><br><p style="text-align: center; font-size: smaller;">
+    Web Developer <a class="copyright__a" href="https://drive.google.com/file/d/1JvKXVXbLuJM6whTgIW7sI9gLW1nE9W_H/view?usp=drive_link">Daniel Alejandro</a>,
+    contrataciones: <a href="mailto:daniel.salas@bue.edu.ar">daniel.salas@bue.edu.ar</a>.
+    © All rights reserved <span id="yearPlaceholder"></span>.
+</p>
+`;
     document.body.append(footer);
 
     // Obtén el elemento del marcador de posición del año y el año actual
