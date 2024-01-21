@@ -49,8 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <li><a href="https://api.whatsapp.com/send/?phone=5491132140614" class="fa fa-whatsapp" title="WhatsApp"></a></li>
             <li><a href="mailto:jubilamosinf@hotmail.com" class="fa fa-envelope" title="Email"></a></li>
           </ul><br>
-          <p>Puedes contactarnos a través de Facebook, Instagram, WhatsApp o llamada directa al 
-            <a href="https://api.whatsapp.com/send/?phone=5491132140614">1132140614</a> o por <a href="mailto:jubilamosinf@hotmail.com">mail</a>.</p>
+          <p style="text-align:justify;">Puedes contactarnos a través de <a href="https://www.facebook.com/jubilamosok" title="Facebook">Facebook</a>, <a href="https://www.instagram.com/jubilamos" title="Instagram">Instagram</a>, <a href="https://api.whatsapp.com/send/?phone=5491132140614">WhatsApp</a>, ☎️ llamada directa al 1132140614 o por <a href="mailto:jubilamosinf@hotmail.com">correo electrónico</a>.</p>
         </section>
         <section id="enlaces">
           <h3>SITIOS DE INTERÉS</h3><br>
@@ -67,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3351718014364!2d-58.396454525147035!3d-34.595685157072516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabdfb5e76a9%3A0x47006ce9bde4a929!2sAv.%20Sta.%20Fe%201845%2C%20C1123AAA%20CABA!5e0!3m2!1ses-419!2sar!4v1705080950195!5m2!1ses-419!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
       </div>
-      <p style="text-align: center;">Web Developer <a class="copyright__a" href="https://drive.google.com/file/d/1JvKXVXbLuJM6whTgIW7sI9gLW1nE9W_H/view?usp=drive_link">Daniel Alejandro</a>, contrataciones: <a href="mailto:daniel.salas@bue.edu.ar">daniel.salas@bue.edu.ar</a>. © All rights reserved <span id="yearPlaceholder"></span>.</p>
+      <br><p style="text-align: center;">Web Developer <a class="copyright__a" href="https://drive.google.com/file/d/1JvKXVXbLuJM6whTgIW7sI9gLW1nE9W_H/view?usp=drive_link">Daniel Alejandro</a>, contrataciones: <a href="mailto:daniel.salas@bue.edu.ar">daniel.salas@bue.edu.ar</a>. © All rights reserved <span id="yearPlaceholder"></span>.</p>
       `;
     document.body.append(footer);
 
