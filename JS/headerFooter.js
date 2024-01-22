@@ -47,6 +47,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const footer = document.createElement('footer');
 
     footer.innerHTML = `
+      <a style="display: scroll; position: fixed; bottom: 10px; left: 15px;z-index: 9999;" href="#" title="volver arriba">
+        <img src="https://www.euroresidentes.com/tecnologia/trucos-diseno-web/wp-content/uploads/sites/7/2014/08/up1_azul1.png" />
+      </a>
       <a href="https://api.whatsapp.com/send?phone=5491132140614" class="btn-wsp" target="_blank">
         <i class="fa fa-whatsapp icono"></i>
       </a>
