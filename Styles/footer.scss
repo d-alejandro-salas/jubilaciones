@@ -53,7 +53,7 @@ footer {
   }
 
   #mapa {
-    text-align: center; // Centra el contenido horizontalmente
+    text-align: left;
 
     iframe {
       margin: 0 auto; // Establece el margen izquierdo a 0
@@ -85,7 +85,6 @@ footer {
   }
 }
 
-
 /* Diseño para tabletas */
 @media screen and (min-width: 600px) {
   footer {
@@ -101,19 +100,24 @@ footer {
         flex: 1; /* Todas las secciones ocupan el mismo espacio disponible */
       }
     }
-  }
-}
 
-/* Diseño para escritorio */
-@media screen and (min-width: 1024px) {
-  footer {
-    padding: 3rem;
+    #mapa {
 
-    .footer__container {
-      flex-direction: row; /* Cambiado a columnas en el diseño de escritorio */
+      span:first-child {
+        text-decoration: underline;
+      }
 
-      section {
-        flex: 1; /* Todas las secciones ocupan el mismo espacio disponible */
+      #verMapa {
+        display:inline!important;
+      }
+      iframe {
+        display: none; // Inicialmente, oculta el iframe en tabletas
+      }
+    }
+
+    #mapa.activo {
+      iframe {
+        display: block; // Si #mapa tiene la clase 'activo', muestra el iframe
       }
     }
   }
