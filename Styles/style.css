@@ -31,6 +31,9 @@ footer .footer__container .redesSociales__ul {
 footer .footer__container .redesSociales__ul li {
   margin-left: 2rem; /* Ajusta el valor según la separación deseada */
 }
+footer .footer__container .redesSociales__ul a:hover {
+  transform: scale(1.6);
+}
 footer .footer__container #yearPlaceholder {
   font-weight: bold;
 }
@@ -218,7 +221,7 @@ ul, ol {
   padding-left: 0;
 }
 
-main {
+main, #introduction {
   padding: 6rem;
   background-color: #4B815E;
   color: white;
@@ -228,25 +231,37 @@ main {
   align-items: center; /* Centra los elementos horizontalmente */
   justify-content: center; /* Centra los elementos verticalmente */
 }
-main .pages__img {
+main .pages__img, #introduction .pages__img {
   width: 300px; /* Ajusta el tamaño según tus necesidades */
   height: 200px;
   margin-bottom: 2rem;
   /* Agrega cualquier otro estilo necesario para las imágenes */
 }
-main a {
+main a, #introduction a {
   text-decoration: none; /* Elimina el subrayado predeterminado */
   color: inherit; /* Utiliza el color del texto del elemento padre */
 }
-main a:hover {
+main a:hover, #introduction a:hover {
   text-decoration: none; /* También elimina el subrayado en el estado de hover (si lo deseas) */
 }
-main p {
+main p, #introduction p {
   text-align: justify;
 }
-main h1 {
+main h1, #introduction h1 {
   margin-bottom: 4rem;
   text-align: center;
+  text-transform: uppercase;
+}
+
+#introduction {
+  background-color: skyblue;
+}
+
+.enterprise {
+  background-color: white;
+  border: 1px solid rgb(24, 24, 255);
+  color: #4B815E;
+  padding: 2px 5px;
   text-transform: uppercase;
 }
 

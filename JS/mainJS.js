@@ -1,5 +1,11 @@
 "use strict";
 
+// Función personalizada para buscar texto en el contenido de los elementos
+// Esta función solo buscará coincidencias exactas y distingue mayúsculas de minúsculas
+HTMLElement.prototype.containsText = function(text) {
+  return this.innerText.includes(text);
+};
+
 document.addEventListener('DOMContentLoaded', function() {
   // Obtiene el contenido del elemento h1
   var pageTitle = document.querySelector('h1').innerText;
@@ -26,9 +32,19 @@ document.addEventListener('DOMContentLoaded', function() {
   customStylesheet.type = 'text/css';
   customStylesheet.href = 'Styles/style.css';
   document.head.appendChild(customStylesheet);
+
+  // Agregar un <span class="enterprise"> alrededor de cada instancia de la palabra "Jubilamos"
+  var elementsWithJubilamos = document.querySelectorAll('*');
+  elementsWithJubilamos.forEach(function(element) {
+    if (element.containsText("Jubilamos")) {
+      var span = document.createElement('span');
+      span.className = 'enterprise';
+      element.innerHTML = element.innerHTML.replace(/Jubilamos/g, '<span class="enterprise">Jubilamos</span>');
+    }
+  });
 });
 
-  function toggleMap() {
-    var mapa = document.getElementById('mapa');
-    mapa.classList.toggle('activo');
-  }
+function toggleMap() {
+  var mapa = document.getElementById('mapa');
+  mapa.classList.toggle('activo');
+}
