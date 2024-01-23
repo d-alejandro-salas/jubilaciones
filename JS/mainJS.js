@@ -42,6 +42,13 @@ document.addEventListener('DOMContentLoaded', function() {
       element.innerHTML = element.innerHTML.replace(/Jubilamos/g, '<span class="enterprise">Jubilamos</span>');
     }
   });
+
+  // Agregar la metaetiqueta que falta
+  var metaViewport = document.createElement('meta');
+  metaViewport.setAttribute('charset', 'utf-8');
+  metaViewport.setAttribute('name', 'viewport');
+  metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
+  document.head.appendChild(metaViewport);
 });
 
 function toggleMap() {

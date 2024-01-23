@@ -30,7 +30,7 @@
     }
 
     p {
-      font-size: 2rem;
+      font-size: 1.5rem;
       margin-top: 1rem;
     }
   }
@@ -40,6 +40,10 @@
 @media screen and (min-width: 600px) {
   #main__grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  p {
+    font-size: 2rem!important;
   }
 }
 
