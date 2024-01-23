@@ -270,6 +270,11 @@ main h1, #introduction h1 {
   text-transform: uppercase;
 }
 
+.enterprise:hover {
+  color: white;
+  background-color: violet;
+}
+
 .btn-wsp {
   position: fixed;
   width: 60px;
