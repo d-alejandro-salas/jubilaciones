@@ -47,6 +47,9 @@ footer #enlaces a {
 footer #mapa {
   text-align: left;
 }
+footer #mapa h3 {
+  text-align: center;
+}
 footer #mapa iframe {
   margin: 0 auto;
   display: block;
@@ -214,7 +217,6 @@ html {
 
 body {
   font-family: Arial, sans-serif;
-  text-align: justify;
   font-size: 2rem;
   overflow-x: hidden;
 }
@@ -248,7 +250,7 @@ main a:hover, #introduction a:hover {
   text-decoration: none; /* También elimina el subrayado en el estado de hover (si lo deseas) */
 }
 main p, #introduction p {
-  text-align: justify;
+  text-align: left;
 }
 main h1, #introduction h1 {
   margin-bottom: 4rem;

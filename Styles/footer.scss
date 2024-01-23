@@ -59,6 +59,10 @@ footer {
   #mapa {
     text-align: left;
 
+    h3 {
+      text-align: center;
+    }
+
     iframe {
       margin: 0 auto; // Establece el margen izquierdo a 0
       display: block; // Para ajustar automáticamente el margen horizontal
