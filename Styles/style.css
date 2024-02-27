@@ -270,27 +270,36 @@ main h1, #introduction h1 {
   text-align: center;
   text-transform: uppercase;
 }
-main h3, main h4, #introduction h3, #introduction h4 {
-  margin-top: 20px;
-  margin-bottom: 20px; /* Este valor puede ajustarse según la cantidad de espacio que desees */
+main .h3__subtitle, #introduction .h3__subtitle {
+  text-transform: uppercase;
+  margin-top: 35px; /* Este valor puede ajustarse según la cantidad de espacio que desees */
 }
 main h4, #introduction h4 {
+  margin-top: 20px;
   text-decoration: underline;
 }
 
 #introduction {
   background-color: skyblue;
 }
-
-.enterprise {
+#introduction .enterprise {
   color: #4B815E;
   padding: 2px 5px;
   text-transform: uppercase;
 }
-
-.enterprise:hover {
+#introduction .enterprise:hover {
   color: white;
   background-color: #4B815E;
+}
+
+.enterprise {
+  color: white;
+  text-transform: uppercase;
+}
+
+.enterprise:hover {
+  background-color: white;
+  color: #4B815E;
 }
 
 .btn-wsp {
