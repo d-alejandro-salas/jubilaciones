@@ -1,0 +1,3 @@
+# Ignorar todos los archivos en la carpeta "styles" excepto "style.css"
+styles/*
+!styles/style.css

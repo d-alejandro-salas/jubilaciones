@@ -171,13 +171,23 @@ header nav a:hover {
   border-radius: 8px;
   transition: transform 0.3s ease;
 }
+#main__grid div .main__link {
+  display: flex;
+  flex-direction: column; /* Cambia la dirección del eje principal a vertical */
+}
+#main__grid div .main__link .linkDescription__container {
+  align-self: flex-end; /* Ubica este elemento al final del contenedor padre en el eje Y */
+  border: none;
+}
 #main__grid div:hover {
   transform: scale(1.05);
 }
-#main__grid div h3 {
+#main__grid div h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
+  text-align: center;
+  height: 75px;
 }
 #main__grid div img {
   width: 100%;
@@ -233,14 +243,14 @@ main, #introduction {
   line-height: 3rem;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra los elementos horizontalmente */
   justify-content: center; /* Centra los elementos verticalmente */
 }
 main .pages__img, #introduction .pages__img {
   width: 300px; /* Ajusta el tamaño según tus necesidades */
   height: 200px;
   margin-bottom: 2rem;
-  /* Agrega cualquier otro estilo necesario para las imágenes */
+  margin-left: auto; /* Centra la imagen horizontalmente */
+  margin-right: auto; /* Centra la imagen horizontalmente */
 }
 main a, #introduction a {
   text-decoration: none; /* Elimina el subrayado predeterminado */
@@ -249,13 +259,20 @@ main a, #introduction a {
 main a:hover, #introduction a:hover {
   text-decoration: none; /* También elimina el subrayado en el estado de hover (si lo deseas) */
 }
-main p, #introduction p {
-  text-align: left;
+main p, main h3, main h4, #introduction p, #introduction h3, #introduction h4 {
+  text-align: left !important; /* este  funciona perfectamente */
 }
 main h1, #introduction h1 {
   margin-bottom: 4rem;
   text-align: center;
   text-transform: uppercase;
+}
+main h3, main h4, #introduction h3, #introduction h4 {
+  margin-top: 20px;
+  margin-bottom: 20px; /* Este valor puede ajustarse según la cantidad de espacio que desees */
+}
+main h4, #introduction h4 {
+  text-decoration: underline;
 }
 
 #introduction {
@@ -263,8 +280,6 @@ main h1, #introduction h1 {
 }
 
 .enterprise {
-  background-color: white;
-  border: 1px solid rgb(24, 24, 255);
   color: #4B815E;
   padding: 2px 5px;
   text-transform: uppercase;
@@ -272,7 +287,7 @@ main h1, #introduction h1 {
 
 .enterprise:hover {
   color: white;
-  background-color: violet;
+  background-color: #4B815E;
 }
 
 .btn-wsp {

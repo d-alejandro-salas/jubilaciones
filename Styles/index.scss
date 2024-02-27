@@ -32,14 +32,14 @@ main, #introduction {
   line-height: 3rem;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra los elementos horizontalmente */
   justify-content: center; /* Centra los elementos verticalmente */
 
   .pages__img {
     width: 300px; /* Ajusta el tamaño según tus necesidades */
     height: 200px;
     margin-bottom: 2rem;
-    /* Agrega cualquier otro estilo necesario para las imágenes */
+    margin-left: auto; /* Centra la imagen horizontalmente */
+    margin-right: auto; /* Centra la imagen horizontalmente */
   }
 
   a {
@@ -51,14 +51,23 @@ main, #introduction {
     text-decoration: none; /* También elimina el subrayado en el estado de hover (si lo deseas) */
   }
 
-  p {
-    text-align: left;
+  p, h3, h4 {
+    text-align: left!important; /* este  funciona perfectamente */ 
   }
 
   h1 {
     margin-bottom: 4rem;
     text-align: center;
     text-transform: uppercase;
+  }
+
+  h3, h4 {
+    margin-top: 20px;
+    margin-bottom: 20px; /* Este valor puede ajustarse según la cantidad de espacio que desees */
+  }
+
+  h4 {
+    text-decoration: underline;
   }
 }
 
@@ -67,8 +76,6 @@ main, #introduction {
 }
 
 .enterprise {
-  background-color: white;
-  border: 1px solid rgb(24, 24, 255);
   color: $verde-principal;
   padding: 2px 5px;
   text-transform: uppercase;
@@ -76,7 +83,7 @@ main, #introduction {
 
 .enterprise:hover {
   color: white;
-  background-color: violet;
+  background-color: $verde-principal;
 }
 
 .btn-wsp{
@@ -112,7 +119,7 @@ main, #introduction {
 } 
 
 @media only screen and (min-width:320px) and (max-width:768px){
-  
+
   .btn-wsp{
     width:63px;
     height:63px;

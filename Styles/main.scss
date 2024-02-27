@@ -14,14 +14,26 @@
     border-radius: 8px;
     transition: transform 0.3s ease;
 
+    .main__link {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del eje principal a vertical */
+
+      .linkDescription__container {
+        align-self: flex-end; /* Ubica este elemento al final del contenedor padre en el eje Y */
+        border: none;
+      }
+    }
+
     &:hover {
       transform: scale(1.05);
     }
 
-    h3 {
+    h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
       text-transform: uppercase;
+      text-align: center;
+      height: 75px;
     }
 
     img {
@@ -36,6 +48,7 @@
   }
 }
 
+
 /* Diseño para tabletas */
 @media screen and (min-width: 600px) {
   #main__grid {
@@ -49,6 +62,7 @@
 
 /* Diseño para escritorio */
 @media screen and (min-width: 1024px) {
+
   #main__grid {
     grid-template-columns: repeat(4, 1fr);
   }
