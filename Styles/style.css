@@ -171,6 +171,9 @@ header nav a:hover {
   border-radius: 8px;
   transition: transform 0.3s ease;
 }
+#main__grid div:hover {
+  transform: scale(1.05);
+}
 #main__grid div .main__link {
   display: flex;
   flex-direction: column; /* Cambia la dirección del eje principal a vertical */
@@ -179,8 +182,8 @@ header nav a:hover {
   align-self: flex-end; /* Ubica este elemento al final del contenedor padre en el eje Y */
   border: none;
 }
-#main__grid div:hover {
-  transform: scale(1.05);
+#main__grid div .main__link .linkDescription__container:hover {
+  transform: scale(1);
 }
 #main__grid div h2 {
   font-size: 2rem;
