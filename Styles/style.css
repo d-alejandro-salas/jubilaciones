@@ -207,7 +207,7 @@ header nav a:hover {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   p {
-    font-size: 2rem !important;
+    font-size: 2rem;
   }
 }
 /* Diseño para escritorio */
@@ -261,6 +261,10 @@ main a, #introduction a {
 }
 main a:hover, #introduction a:hover {
   text-decoration: none; /* También elimina el subrayado en el estado de hover (si lo deseas) */
+}
+main .bigFontSize, #introduction .bigFontSize {
+  font-size: 2.25rem;
+  line-height: 3.3rem;
 }
 main p, main h3, main h4, #introduction p, #introduction h3, #introduction h4 {
   text-align: left !important; /* este  funciona perfectamente */

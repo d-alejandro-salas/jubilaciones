@@ -33,15 +33,19 @@ document.addEventListener('DOMContentLoaded', function() {
   customStylesheet.href = 'Styles/style.css';
   document.head.appendChild(customStylesheet);
 
-  // Agregar un <span class="enterprise"> alrededor de cada instancia de la palabra "Jubilamos"
-  var elementsWithJubilamos = document.querySelectorAll('*');
-  elementsWithJubilamos.forEach(function(element) {
-    if (element.containsText("Jubilamos")) {
-      var span = document.createElement('span');
-      span.className = 'enterprise';
-      element.innerHTML = element.innerHTML.replace(/Jubilamos/g, '<span class="enterprise">Jubilamos</span>');
-    }
-  });
+// Agregar un <span class="enterprise"> alrededor de cada instancia de la palabra "Jubilamos" y subraya "Anses"
+var elementsWithJubilamos = document.querySelectorAll('*');
+elementsWithJubilamos.forEach(function(element) {
+  if (element.textContent.includes("Jubilamos")) {
+    var span = document.createElement('span');
+    span.className = 'enterprise';
+    element.innerHTML = element.innerHTML.replace(/Jubilamos/g, '<span class="enterprise">Jubilamos</span>');
+  }
+  if (element.textContent.includes("ANSES")) {
+    element.innerHTML = element.innerHTML.replace(/ANSES/g, "<u>ANSES</u>");
+  }
+});
+
 
   // Agregar la metaetiqueta que falta
   var metaViewport = document.createElement('meta');
