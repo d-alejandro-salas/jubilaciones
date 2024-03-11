@@ -271,6 +271,9 @@ main .bigFontSize, #introduction .bigFontSize {
 main p, main h3, main h4, #introduction p, #introduction h3, #introduction h4 {
   text-align: left !important; /* este  funciona perfectamente */
 }
+main p, #introduction p {
+  margin-bottom: 2rem;
+}
 main h1, #introduction h1 {
   margin-bottom: 4rem;
   text-align: center;
