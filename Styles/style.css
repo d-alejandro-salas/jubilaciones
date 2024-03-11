@@ -109,8 +109,8 @@ header {
   text-align: center;
 }
 header #logo img {
-  width: 100px;
-  height: 100px;
+  width: 11rem;
+  height: 11rem;
 }
 header nav {
   margin-top: 1rem;
@@ -132,8 +132,8 @@ header nav a:hover {
     justify-content: space-evenly;
   }
   header #logo img {
-    width: 80px;
-    height: 80px;
+    width: 8.8rem;
+    height: 8.8rem;
   }
   header nav {
     margin-top: 2rem;
