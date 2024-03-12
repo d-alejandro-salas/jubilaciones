@@ -10,6 +10,7 @@ footer {
 footer a {
   color: #fff;
   text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
 }
 footer a:hover {
   color: #8acfa2;
@@ -23,19 +24,22 @@ footer .footer__container section {
   flex: 1; /* Todas las secciones ocupan el mismo espacio disponible */
   margin-bottom: 1rem;
 }
-footer .footer__container .redesSociales__ul {
+footer .footer__container section .address {
+  cursor: pointer;
+}
+footer .footer__container section .address:hover {
+  color: #8acfa2;
+}
+footer .footer__container section .redesSociales__ul {
   display: flex;
   justify-content: center; /* Alinea los elementos en el centro horizontalmente */
   transform: scale(1.5);
 }
-footer .footer__container .redesSociales__ul li {
+footer .footer__container section .redesSociales__ul li {
   margin-left: 2rem; /* Ajusta el valor según la separación deseada */
 }
-footer .footer__container .redesSociales__ul a:hover {
+footer .footer__container section .redesSociales__ul a:hover {
   transform: scale(1.6);
-}
-footer .footer__container #yearPlaceholder {
-  font-weight: bold;
 }
 footer #enlaces {
   text-align: center; /* Centra el contenido horizontalmente en la sección "enlaces" */
@@ -120,9 +124,11 @@ header nav a {
   display: block;
   margin-bottom: 2rem;
   color: #fff;
+  transition: color 0.3s, transform 0.3s;
 }
 header nav a:hover {
   color: #8acfa2;
+  transform: scale(1.1);
 }
 
 /* Diseño para tabletas */
@@ -158,53 +164,53 @@ header nav a:hover {
     font-size: 2rem;
   }
 }
-#main__grid {
+#mainGrid {
   display: grid;
   gap: 20px;
   justify-content: center;
 }
-#main__grid div {
+#mainGrid div {
   background-color: white;
-  color: #8acfa2;
+  color: black;
   text-align: center;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
   transition: transform 0.3s ease;
 }
-#main__grid div:hover {
+#mainGrid div:hover {
   transform: scale(1.05);
 }
-#main__grid div .main__link {
+#mainGrid div .mainGrid__link {
   display: flex;
   flex-direction: column; /* Cambia la dirección del eje principal a vertical */
 }
-#main__grid div .main__link .linkDescription__container {
+#mainGrid div .mainGrid__link .linkDescription__container {
   align-self: flex-end; /* Ubica este elemento al final del contenedor padre en el eje Y */
   border: none;
 }
-#main__grid div .main__link .linkDescription__container:hover {
+#mainGrid div .mainGrid__link .linkDescription__container:hover {
   transform: scale(1);
 }
-#main__grid div h2 {
+#mainGrid div h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
   text-align: center;
   height: 75px;
 }
-#main__grid div img {
+#mainGrid div img {
   width: 100%;
   height: auto;
 }
-#main__grid div p {
+#mainGrid div p {
   font-size: 1.75rem;
   margin-top: 1rem;
 }
 
 /* Diseño para tabletas */
 @media screen and (min-width: 600px) {
-  #main__grid {
+  #mainGrid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   p {
@@ -213,7 +219,7 @@ header nav a:hover {
 }
 /* Diseño para escritorio */
 @media screen and (min-width: 1024px) {
-  #main__grid {
+  #mainGrid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
