@@ -12,7 +12,7 @@ footer a {
   text-decoration: none;
 }
 footer a:hover {
-  color: #4B815E;
+  color: #8acfa2;
 }
 footer .footer__container {
   display: flex; /* Cambiado a flex para tener filas en lugar de columnas */
@@ -56,10 +56,11 @@ footer #mapa iframe {
   max-width: 100%;
 }
 footer .destacado {
-  border: 2px solid #4B815E;
-  border-radius: 8px;
-  padding: 10px;
+  border: 0.2rem solid #8acfa2;
+  border-radius: 0.8rem;
+  padding: 1rem;
   animation: resaltar 1s 2 alternate;
+  background-color: #2e2e2e;
 }
 @keyframes resaltar {
   0% {
@@ -121,7 +122,7 @@ header nav a {
   color: #fff;
 }
 header nav a:hover {
-  color: #4B815E;
+  color: #8acfa2;
 }
 
 /* Diseño para tabletas */
@@ -164,7 +165,7 @@ header nav a:hover {
 }
 #main__grid div {
   background-color: white;
-  color: #4B815E;
+  color: #8acfa2;
   text-align: center;
   padding: 20px;
   border: 1px solid #ccc;
@@ -243,7 +244,7 @@ ul, ol {
 
 main, #introduction {
   padding: 6rem;
-  background-color: #4B815E;
+  background-color: #8acfa2;
   color: white;
   line-height: 3rem;
   display: flex;
@@ -289,16 +290,15 @@ main h4, #introduction h4 {
 }
 
 #introduction {
-  background-color: skyblue;
+  background-color: #0a7a83;
 }
 #introduction .enterprise {
-  color: #4B815E;
   padding: 2px 5px;
   text-transform: uppercase;
 }
 #introduction .enterprise:hover {
   color: white;
-  background-color: #4B815E;
+  background-color: #8acfa2;
 }
 
 .enterprise {
@@ -308,7 +308,7 @@ main h4, #introduction h4 {
 
 .enterprise:hover {
   background-color: white;
-  color: #4B815E;
+  color: #8acfa2;
 }
 
 .btn-wsp {
