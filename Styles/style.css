@@ -24,21 +24,34 @@ footer .footer__container section {
   flex: 1; /* Todas las secciones ocupan el mismo espacio disponible */
   margin-bottom: 1rem;
 }
-footer .footer__container section .address {
-  cursor: pointer;
-}
-footer .footer__container section .address:hover {
-  color: #8acfa2;
-}
-footer .footer__container section .redesSociales__ul {
+footer .footer__container .redesSociales__ul {
   display: flex;
-  justify-content: center; /* Alinea los elementos en el centro horizontalmente */
+  justify-content: center;
   transform: scale(1.5);
 }
-footer .footer__container section .redesSociales__ul li {
-  margin-left: 2rem; /* Ajusta el valor según la separación deseada */
+footer .footer__container .redesSociales__ul li {
+  margin-left: 2rem;
 }
-footer .footer__container section .redesSociales__ul a:hover {
+footer .footer__container .redesSociales__ul a {
+  color: #333;
+  font-size: 24px;
+  transition: 0.3s;
+}
+footer .footer__container .redesSociales__ul a.fa-facebook {
+  color: #3b5998;
+}
+footer .footer__container .redesSociales__ul a.fa-instagram {
+  background-image: linear-gradient(to bottom, #e4405f, #8a2be2);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+footer .footer__container .redesSociales__ul a.fa-whatsapp {
+  color: #25d366;
+}
+footer .footer__container .redesSociales__ul a.fa-envelope {
+  color: #c4302b;
+}
+footer .footer__container .redesSociales__ul a:hover {
   transform: scale(1.6);
 }
 footer #enlaces {
@@ -59,6 +72,12 @@ footer #mapa iframe {
   display: block;
   max-width: 100%;
 }
+footer #mapa .addressMap {
+  cursor: pointer;
+}
+footer #mapa .addressMap:hover {
+  color: #8acfa2;
+}
 footer .destacado {
   border: 0.2rem solid #8acfa2;
   border-radius: 0.8rem;
@@ -69,11 +88,11 @@ footer .destacado {
 @keyframes resaltar {
   0% {
     transform: scale(1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
   }
   100% {
     transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.3);
   }
 }
 footer .copyright__a {
@@ -114,8 +133,8 @@ header {
   text-align: center;
 }
 header #logo img {
-  width: 11rem;
-  height: 11rem;
+  width: 12rem;
+  height: 12rem;
 }
 header nav {
   margin-top: 1rem;
@@ -139,8 +158,8 @@ header nav a:hover {
     justify-content: space-evenly;
   }
   header #logo img {
-    width: 8.8rem;
-    height: 8.8rem;
+    width: 10rem;
+    height: 10rem;
   }
   header nav {
     margin-top: 2rem;
@@ -223,6 +242,18 @@ header nav a:hover {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-transform: uppercase;
+}
+ul li {
+  cursor: pointer;
+}
+ul li:hover {
+  color: white;
+}
+
 *,
 *::before,
 *::after {
@@ -251,7 +282,7 @@ ul, ol {
 main, #introduction {
   padding: 6rem;
   background-color: #8acfa2;
-  color: white;
+  color: black;
   line-height: 3rem;
   display: flex;
   flex-direction: column;
@@ -297,17 +328,11 @@ main h4, #introduction h4 {
 
 #introduction {
   background-color: #0a7a83;
-}
-#introduction .enterprise {
-  padding: 2px 5px;
-  text-transform: uppercase;
-}
-#introduction .enterprise:hover {
   color: white;
-  background-color: #8acfa2;
 }
 
 .enterprise {
+  padding: 2px 5px;
   color: white;
   text-transform: uppercase;
 }

@@ -73,9 +73,10 @@ document.addEventListener("DOMContentLoaded", function () {
           </ul>
         </section>
         <section id="mapa">
-          <h3>NUESTRAS OFICINAS</h3><br>
+          <h3>NUESTRAS OFICINAS</h3>
+          <br>
           <p>
-            <span class="address" onclick="toggleMap()">Av. Santa Fe 1845</span><span id="verMapa" style="display:none;"> (hacé click para visualizar el mapa)</span>, Ciudad Autónoma de Buenos Aires.<br>(sólo con cita previa) y delegados en todo el país. 
+            <span class="addressMap" onclick="toggleMap()">Av. Santa Fe 1845</span><span id="verMapa" style="display:none;"> (hacé click para visualizar el mapa)</span>, Ciudad Autónoma de Buenos Aires.<br>(sólo con cita previa) y delegados en todo el país. 
           </p>
           <br>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3349961380827!2d-58.3938796!3d-34.5956896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabdfb5e76a9%3A0x47006ce9bde4a929!2sAv.%20Sta.%20Fe%201845%2C%20C1123AAA%20CABA!5e0!3m2!1ses-419!2sar!4v1705924921762!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -83,9 +84,10 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
       <br><br><br><br><hr><br>
       <p style="text-align: center; font-size: smaller;">
-    Web Developer <a class="copyright__a" href="https://drive.google.com/file/d/1JvKXVXbLuJM6whTgIW7sI9gLW1nE9W_H/view?usp=drive_link">Daniel Alejandro</a>,
-    contrataciones: <a href="mailto:daniel.salas@bue.edu.ar">daniel.salas@bue.edu.ar</a>.
-    © All rights reserved <span id="yearPlaceholder"></span>.</p>
+        Web Developer <a class="copyright__a" href="https://drive.google.com/file/d/1JvKXVXbLuJM6whTgIW7sI9gLW1nE9W_H/view?usp=drive_link">Daniel Alejandro</a>,
+        contrataciones: <a href="mailto:daniel.salas@bue.edu.ar">daniel.salas@bue.edu.ar</a>.
+        © All rights reserved <span id="yearPlaceholder"></span>.
+      </p>
 `;
     document.body.append(footer);
 
