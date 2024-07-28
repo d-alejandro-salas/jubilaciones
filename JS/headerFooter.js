@@ -1,7 +1,4 @@
-"use strict";
-
 document.addEventListener("DOMContentLoaded", function () {
-
   // Función para agregar la clase destacado a la sección adecuada
   function highlightSection() {
     const redesSocialesSection = document.getElementById('redesSociales');
@@ -47,8 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const footer = document.createElement('footer');
 
     footer.innerHTML = `
-      <a style="display: scroll; position: fixed; bottom: 10px; left: 15px;z-index: 9999;" href="#" title="volver arriba">
-        <img src="https://www.euroresidentes.com/tecnologia/trucos-diseno-web/wp-content/uploads/sites/7/2014/08/up1_azul1.png" />
+      <a id="scrollUp" href="#" title="volver arriba">
+        <img src="https://www.euroresidentes.com/tecnologia/trucos-diseno-web/wp-content/uploads/sites/7/2014/08/up1_azul1.png">
       </a>
       <a href="https://api.whatsapp.com/send?phone=5491132140614" class="btn-wsp" target="_blank">
         <i class="fa fa-whatsapp icono"></i>
@@ -100,9 +97,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Verifica el fragmento de la URL al cargar la página
     highlightSection();
-
+    
     // Agrega un event listener al evento hashchange
     window.addEventListener('hashchange', highlightSection);
+
+    // Agrega un event listener para el evento scroll
+    window.addEventListener('scroll', toggleBackToTopButton);
+  }
+
+  // Función para mostrar u ocultar el botón de volver arriba dependiendo del desplazamiento de la página
+  function toggleBackToTopButton() {
+    var upButton = document.getElementById("scrollUp");
+
+    // Mostrar el botón cuando el desplazamiento es mayor que 100px
+    if (document.body.scrollTop > 95 || document.documentElement.scrollTop > 95) {
+      upButton.style.display = "block";
+    } else {
+      upButton.style.display = "none";
+    }
+
+    upButton.addEventListener("click", function(event) {
+      event.preventDefault(); // Prevenir comportamiento por defecto del ancla
+      upButton.classList.add('scaled'); // Añadir clase para escalar
+      setTimeout(function() {
+        upButton.classList.remove('scaled'); // Eliminar clase después de la animación
+      }, 300); // Duración de la animación de escala
+
+      // Desplazamiento suave hacia arriba
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
   }
 
   generateHeader();

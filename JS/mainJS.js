@@ -46,7 +46,6 @@ elementsWithJubilamos.forEach(function(element) {
   }
 });
 
-
   // Agregar la metaetiqueta que falta
   var metaViewport = document.createElement('meta');
   metaViewport.setAttribute('charset', 'utf-8');
